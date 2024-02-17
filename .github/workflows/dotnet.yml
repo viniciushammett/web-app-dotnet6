@@ -19,7 +19,7 @@ jobs:
         dotnet-version: 6.x
 
     - name: Restore dependencies
-      run: dotnet restore ./MinhaAplicacaoDotNet6/MinhaAplicacaoWeb/MinhaAplicacaoDotNet6.sln
+      run: dotnet restore ./MinhaAplicacaoDotNet6/MinhaAplicacaoWeb/MinhaAplicacaoWeb.csproj
 
     - name: Build
       run: dotnet build --configuration Release
