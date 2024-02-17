@@ -37,6 +37,7 @@ jobs:
       uses: actions/download-artifact@v3.0.2
       with:
         name: dotnet-app
+        path: ./bin/Release/net6.0
       
     - name: Docker Login
       uses: docker/login-action@v2.0.0
