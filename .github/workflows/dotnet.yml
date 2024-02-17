@@ -30,8 +30,8 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v2
       with:
-        context: .
-        file: ./MinhaAplicacaoDotnet6/Dockerfile
+        context: ./MinhaAplicacaoDotNet6/MinhaAplicacaoWeb/MinhaAplicacaoWeb.csproj
+        file: ./MinhaAplicacaoDotNet6/Dockerfile
         push: true
         tags: vmoney2021/dotnet6-web-app:latest
       env:
