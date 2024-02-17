@@ -22,7 +22,7 @@ jobs:
       run: dotnet restore ./MinhaAplicacaoDotNet6/MinhaAplicacaoWeb/MinhaAplicacaoWeb.csproj
 
     - name: Build
-      run: dotnet build --configuration Release
+      run: dotnet build ./MinhaAplicacaoDotNet6/MinhaAplicacaoWeb/MinhaAplicacaoWeb.csproj --configuration Release
 
     - name: Publish artifact
       uses: actions/upload-artifact@v2
