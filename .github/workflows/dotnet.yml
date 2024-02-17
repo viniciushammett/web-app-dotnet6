@@ -36,4 +36,4 @@ jobs:
         tags: vmoney2021/dotnet6-web-app:latest
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-        DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_TOKEN }}
+        DOCKER_PASSWORD: ${{ secrets.PASSWORD_DOCKER_HUB }}
