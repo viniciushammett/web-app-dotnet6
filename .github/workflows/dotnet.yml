@@ -31,7 +31,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         context: .
-        file: ./Dockerfile
+        file: ./MinhaAplicacaoDotNet6/Dockerfile
         push: true
         tags: vmoney2021/dotnet6-web-app:latest
       env:
